@@ -1,0 +1,366 @@
+/* Formatação Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/background.png) no-repeat;
+    background-attachment: fixed;
+    padding-top: 350px;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #FCA311;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #E5E5E5;
+	border-radius: 20px;
+	border: 3px solid transparent;
+}
+
+/* Formatação de Fontes */
+@font-face {
+    font-family: "opensans";
+    src: url(../fontes/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: "arctic";
+    src: url(../fontes/Arctic.otf);
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(../fontes/Raleway.ttf);
+}
+
+@font-face {
+    font-family: "quantum";
+    src: url(../fontes/Quantum.otf);
+}
+
+/* Formatação de Animações */
+@keyframes scrollDown {
+
+    from {
+        position: relative;
+            top: 0;
+    }
+
+    to {
+        position: relative;
+            top: 10px;
+    }
+
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Formatação Header */
+header {
+    background-image: linear-gradient(195deg, #6985db 0, #14213d 50%, #000000 100%);
+    position: fixed;
+        top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header ul li {
+    padding-left: 40px;
+}
+
+header ul a.nav-link {
+    color: #FCA311;
+    font-size: 25px;
+    font-family: "arctic";
+    transition: color linear 0.1s;
+}
+
+header ul a:hover {
+    color: #E5E5E5;
+}
+
+/* Formatação Start */
+div#start {
+    color: #fff;
+}
+
+div#start button.btn {
+    background-color: transparent;
+    border: 1px solid #FCA311;
+    width: 150px;
+    margin-left: 20px;
+}
+
+div#start button.btn:hover {
+    background-color: #FCA311;
+    border: 1px solid #FCA311;
+}
+
+div#start button.btn a,
+div#start button.btn i {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+div#start h1,
+div#start p {
+    font-family: "arctic";
+}
+
+div#start h1 {
+    font-size: 50px;
+}
+
+div#start p {
+    font-size: 20px;
+}
+
+div#start h2  {
+    color: #FCA311;
+    font-family: "arctic";
+}
+
+div#start h2::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink .7s infinite;
+}
+
+div#start img {
+    width: 165vh;
+    margin-top: -650px;
+    margin-left: 180px;
+}
+
+div.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 35px;
+    animation: scrollDown .5s infinite alternate;
+}
+
+/*Formatação Sobre*/
+div#sobre {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+div#sobre div.col-md-12 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#sobre div.col-md-12 h2 {
+    color: #FCA311;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "raleway";
+}
+
+div#sobre div.col-md-12 img#perfil {
+    border-left: 5px solid #000;
+    background-color: rgba(229, 229, 229, 0.3);
+    cursor: pointer;
+    transition: 500ms linear;
+}
+
+div#sobre div.col-md-12 img#perfil:hover {
+    transform: scale(1.1);
+}
+
+div#sobre div.col-md-12 p {
+    font-size: 20px; 
+    color: #fff;
+}
+
+div#sobre div.col-md-12 p span {
+    font-family: "arctic";
+    color: #FCA311;
+}
+
+div#sobre div.col-md-12 h2 {
+    color: #FCA311;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "raleway";
+}
+
+div#sobre div.col-md-12 h2 span {
+    cursor: pointer;
+}
+
+div#sobre i {
+    color: #E5E5E5;
+}
+
+/* Formatação Projetos */
+div#projetos {
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+div#projetos div.col-md-12 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#projetos div.col-md-12 h2 {
+    color: #FCA311;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "raleway";
+}
+
+div#projetos div.col-md-4 {
+    text-align: center;
+    padding: 30px;
+}
+
+div#projetos div.col-md-4 h3 {
+    font-family: "arctic";
+    color: #FCA311;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+div#projetos div.col-md-4 p {
+    font-family: "raleway";
+    color: #fff;
+    padding: 15px;
+}
+
+div#projetos div.col-md-4 img {
+    transition: 200ms linear;
+}
+
+div#projetos div.col-md-4 img:hover {
+    transform: scale(1.1);
+}
+
+div#projetos i {
+    color: #E5E5E5;
+}
+
+/* Formatação Contato */
+div#contato {
+    margin-top: 150px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+div#contato div.col-md-12 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#contato div.col-md-12 h2 {
+    color: #FCA311;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "raleway";
+}
+
+div#contato i {
+    color: #E5E5E5;
+}
+
+div#contato div.col-md-4 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#contato div.col-md-4 h4 {
+    font-family: "arctic";
+    color: #FCA311;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+div#contato div.col-md-4 a {
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* Formatação Rodape */
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #E5E5E5;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+
+/* Responsividade */
+
+    /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) { 
+
+            div#flexbox i {
+                margin-top: 290px;
+            }
+
+            }
+
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+
+            div#flexbox i {
+                margin-top: 290px;
+            }
+         }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+
+            div#flexbox i {
+                margin-top: 290px;
+            }
+
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+
+         }
+
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+
+         } 
+
+        /* Small devices (landscape phones, 576px and up) */
+        
