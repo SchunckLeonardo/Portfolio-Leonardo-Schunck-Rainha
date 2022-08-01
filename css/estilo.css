@@ -184,7 +184,6 @@ div#sobre div.col-md-12 h2 {
 }
 
 div#sobre div.col-md-12 img#perfil {
-    border-left: 5px solid #000;
     background-color: rgba(229, 229, 229, 0.3);
     cursor: pointer;
     transition: 500ms linear;
